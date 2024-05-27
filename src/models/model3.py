@@ -11,7 +11,7 @@ from keras import layers, models
 from keras.applications import VGG16
 
 
-def build_model(input_shape=(150, 150, 3)):
+def create_model(input_shape=(150, 150, 3)):
     # Load the pre-trained VGG16 model
     conv_base = VGG16(
         weights='imagenet',
